@@ -1,16 +1,13 @@
-﻿\version "2.10.20"
+\version "2.24.0"
 \include "definitions.ly"
 \include "notes.ly"
 
 %Make notes smaller to fit on a single line while entering notes.
-#(set-global-staff-size 18)
+%#(set-global-staff-size 18)
 
 \score {
 	\keepWithTag #'OboeDaCacciaTPart \music
-	\layout {}
-	\midi {\context {
-			\Score 
-			tempoWholesPerMinute = #(ly:make-moment 60 4)
-		}
+	\layout { indent = #24 \mm }
+	\midi {\tempo 4 = 60
 	}
 }

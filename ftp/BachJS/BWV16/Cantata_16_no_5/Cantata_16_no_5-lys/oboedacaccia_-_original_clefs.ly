@@ -1,4 +1,4 @@
-﻿\version "2.10.20"
+\version "2.24.0"
 \include "definitions.ly"
 \include "notes.ly"
 
@@ -7,10 +7,7 @@
 
 \score {
 	\keepWithTag #'OboeDaCacciaPart \music
-	\layout {}
-	\midi {\context {
-			\Score 
-			tempoWholesPerMinute = #(ly:make-moment 60 4)
-		}
+	\layout {indent = #20 \mm }
+	\midi {\tempo 4 = 60
 	}
 }
